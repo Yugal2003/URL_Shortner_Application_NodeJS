@@ -8,7 +8,7 @@ const port = 2828;
 
 app.use(express.urlencoded({extended:true}))
 
-mongoose.connect("mongodb://localhost:27017/urlshortner")
+mongoose.connect("mongodb+srv://reactjsgeekster:Qfo4d0oyHgga70vj@urlshortner.4xgwyws.mongodb.net/")
 .then(() => console.log("Connection with Database established successfully"))
 .catch((err) => console.log("ERROR CONNECTING WITH DATABASE", err));
 
